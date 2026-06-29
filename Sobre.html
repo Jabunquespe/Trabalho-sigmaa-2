@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre o Projeto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Ajustes finos complementares para a página sobre */
+        .sobre-secao {
+            text-align: left;
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        .sobre-titulo {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-transform: uppercase;
+        }
+
+        .sobre-texto {
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: #222;
+        }
+
+        .ferramentas-lista {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 10px;
+        }
+
+        .ferramenta-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            padding: 12px;
+            background: var(--white);
+            border: 2px solid var(--black);
+            border-radius: 6px;
+        }
+
+        .ferramenta-icon {
+            font-size: 1.5rem;
+            min-width: 35px;
+            text-align: center;
+        }
+
+        .ferramenta-detalhe strong {
+            display: block;
+            font-size: 1rem;
+            color: var(--black);
+        }
+
+        .ferramenta-detalhe span {
+            font-size: 0.85rem;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="screen">
+        <div class="header">
+            <a href="home.html" style="color: inherit; text-decoration: none; margin-right: 15px;">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+            <span>Sobre o Projeto</span>
+        </div>
+
+        <div class="t2-content" style="padding: 20px 5%;">
+
+            <div class="neo-box sobre-secao" style="background-color: var(--blue);">
+                <div class="sobre-titulo">
+                    <i class="fa-solid fa-lightbulb"></i> A Ideia do Site
+                </div>
+                <p class="sobre-texto">
+                    Este aplicativo nasceu com o objetivo de **simplificar a vida acadêmica** dos estudantes do IFRS.
+                    Sabendo como a navegação no portal original do SIGAA pode ser lenta ou complexa quando acessada pelo
+                    celular, desenvolvemos esta interface alternativa focada em desempenho e usabilidade.
+                    <br><br>
+                    Utilizando o estilo visual <strong>Neo-Brutalista</strong>, trouxemos um design com forte
+                    personalidade, alto contraste e carregamento instantâneo das informações que mais importam no dia a
+                    dia: suas notas e suas faltas.
+                   
+                </p>
+            </div>
+
+            <div class="neo-box sobre-secao" style="background-color: var(--green);">
+                <div class="sobre-titulo">
+                    <i class="fa-solid fa-gears"></i> Tecnologias Utilizadas
+                </div>
+                <p class="sobre-texto">O ecossistema do projeto foi dividido de forma leve e eficiente:</p>
+
+                <div class="ferramentas-lista">
+                    <div class="ferramenta-item">
+                        <i class="fa-brands fa-node-js ferramenta-icon" style="color: #43a047;"></i>
+                        <div class="ferramenta-detalhe">
+                            <strong>Node.js & Express</strong>
+                            <span>Responsáveis por erguer o nosso servidor local e gerenciar as rotas seguras da API de
+                                integração.</span>
+                        </div>
+                    </div>
+                    <div class="ferramenta-item">
+                        <i class="fa-solid fa-cookie-bite ferramenta-icon" style="color: var(--orange);"></i>
+                        <div class="ferramenta-detalhe">
+                            <strong>Tough-Cookie & Axios</strong>
+                            <span>Criam um "navegador virtual" no back-end para gerenciar sessões e cookies do SIGAA
+                                automaticamente, burlando quedas de conexão.</span>
+                        </div>
+                    </div>
+                    <div class="ferramenta-item">
+                        <i class="fa-solid fa-scissors ferramenta-icon" style="color: #e91e63;"></i>
+                        <div class="ferramenta-detalhe">
+                            <strong>Cheerio (Web Scraping)</strong>
+                            <span>Uma biblioteca ultra veloz que varre o código do portal governamental, raspa os dados
+                                brutos e os organiza para exibição.</span>
+                        </div>
+                    </div>
+                    <div class="ferramenta-item">
+                        <i class="fa-solid fa-code ferramenta-icon" style="color: #2196f3;"></i>
+                        <div class="ferramenta-detalhe">
+                            <strong>Neo-Brutalist UI (HTML5 & CSS3)</strong>
+                            <span>Interface responsiva pura, livre de frameworks pesados, garantindo transições fluidas
+                                e visual moderno de cards interativos expansíveis.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+               
+        </div>
+
+        <div class="footer">Feito por CEFK</div>
+    </div>
+</body>
+
+</html>
